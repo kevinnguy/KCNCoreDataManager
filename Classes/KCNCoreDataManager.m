@@ -35,7 +35,7 @@
     // Core data stack inspired by Tumblr https://github.com/tumblr/CoreDataExample
     
     NSManagedObjectModel *managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:
-                                                [[NSBundle mainBundle] URLForResource:name
+                                                [[NSBundle mainBundle] URLForResource:[NSBundle mainBundle].infoDictionary[@"CFBundleDisplayName"]
                                                                         withExtension:@"momd"]];
     NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
     
