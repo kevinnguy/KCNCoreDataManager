@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "KCNCoreDataManager"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Core data manager"
   s.homepage         = "https://github.com/kevinnguy/KCNCoreDataManager"
   s.license          = 'MIT'
