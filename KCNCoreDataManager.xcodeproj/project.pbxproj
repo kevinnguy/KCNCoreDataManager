@@ -15,6 +15,9 @@
 		0A271E401B867FEE00899B1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A271E3E1B867FEE00899B1F /* LaunchScreen.xib */; };
 		0A271E4C1B867FEE00899B1F /* KCNCoreDataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A271E4B1B867FEE00899B1F /* KCNCoreDataManagerTests.m */; };
 		0A271E581B868F1D00899B1F /* KCNCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A271E571B868F1D00899B1F /* KCNCoreDataManager.m */; };
+		0AA419E71BFA6D00008717A6 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AA419E51BFA6D00008717A6 /* Test.xcdatamodeld */; };
+		0AA419EA1BFA6D27008717A6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA419E91BFA6D27008717A6 /* Person.m */; };
+		0AA419EC1BFA6F97008717A6 /* KCNCoreDataManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AA419EB1BFA6F97008717A6 /* KCNCoreDataManager.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 		0A271E4B1B867FEE00899B1F /* KCNCoreDataManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCNCoreDataManagerTests.m; sourceTree = "<group>"; };
 		0A271E561B868F1D00899B1F /* KCNCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCNCoreDataManager.h; sourceTree = "<group>"; };
 		0A271E571B868F1D00899B1F /* KCNCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCNCoreDataManager.m; sourceTree = "<group>"; };
+		0AA419E61BFA6D00008717A6 /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
+		0AA419E81BFA6D27008717A6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0AA419E91BFA6D27008717A6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0AA419EB1BFA6F97008717A6 /* KCNCoreDataManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KCNCoreDataManager.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 				0A271E2E1B867FEE00899B1F /* KCNCoreDataManager */,
 				0A271E481B867FEE00899B1F /* KCNCoreDataManagerTests */,
 				0A271E2D1B867FEE00899B1F /* Products */,
+				0AA419EB1BFA6F97008717A6 /* KCNCoreDataManager.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +101,9 @@
 				0A271E3C1B867FEE00899B1F /* Images.xcassets */,
 				0A271E3E1B867FEE00899B1F /* LaunchScreen.xib */,
 				0A271E2F1B867FEE00899B1F /* Supporting Files */,
+				0AA419E51BFA6D00008717A6 /* Test.xcdatamodeld */,
+				0AA419E81BFA6D27008717A6 /* Person.h */,
+				0AA419E91BFA6D27008717A6 /* Person.m */,
 			);
 			path = KCNCoreDataManager;
 			sourceTree = "<group>";
@@ -212,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA419EC1BFA6F97008717A6 /* KCNCoreDataManager.podspec in Resources */,
 				0A271E3B1B867FEE00899B1F /* Main.storyboard in Resources */,
 				0A271E401B867FEE00899B1F /* LaunchScreen.xib in Resources */,
 				0A271E3D1B867FEE00899B1F /* Images.xcassets in Resources */,
@@ -232,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA419EA1BFA6D27008717A6 /* Person.m in Sources */,
 				0A271E381B867FEE00899B1F /* ViewController.m in Sources */,
+				0AA419E71BFA6D00008717A6 /* Test.xcdatamodeld in Sources */,
 				0A271E581B868F1D00899B1F /* KCNCoreDataManager.m in Sources */,
 				0A271E351B867FEE00899B1F /* AppDelegate.m in Sources */,
 				0A271E321B867FEE00899B1F /* main.m in Sources */,
@@ -444,6 +458,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AA419E51BFA6D00008717A6 /* Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AA419E61BFA6D00008717A6 /* Test.xcdatamodel */,
+			);
+			currentVersion = 0AA419E61BFA6D00008717A6 /* Test.xcdatamodel */;
+			path = Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0A271E241B867FEE00899B1F /* Project object */;
 }

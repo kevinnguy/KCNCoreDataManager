@@ -69,12 +69,12 @@
     }
     
     NSError *addStoreError = nil;
-    [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
-                                             configuration:nil
-                                                       URL:persistentStoreURL
-                                                   options:nil
-                                                     error:&addStoreError];
-    if (!addStoreError) {
+    NSPersistentStore *store =  [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                                        configuration:nil
+                                                                                  URL:persistentStoreURL
+                                                                              options:nil
+                                                                                error:&addStoreError];
+    if (!store) {
         NSLog(@"KCNCoreDataManager: persistentStoreCoordinator was unable to add store: %@, %@", addStoreError, [addStoreError userInfo]);
     }
     
@@ -178,7 +178,7 @@
     if ([context hasChanges]) {
         NSError *error;
         if (![context save:&error]) {
-            NSLog(@"DMCoreDataManager: Error saving context: %@ %@ %@", self, error, [error userInfo]);
+            NSLog(@"KCNCoreDataManager: Error saving context: %@ %@ %@", self, error, [error userInfo]);
         }
         
         [self kcn_saveContext:context.parentContext];
